@@ -6,6 +6,9 @@
 -- Where "mimiciii" is the name of your schema, and may be different.
 -- --------------------------------------------------------
 
+
+DROP MATERIALIZED VIEW IF EXISTS v_glucose CASCADE;
+create materialized view v_glucose as
 WITH agetbl AS
 (
   SELECT ad.subject_id

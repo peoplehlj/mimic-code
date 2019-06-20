@@ -74,3 +74,4 @@ travisdata/
 # R project files
 .Rproj
 .Rproj.user
+.idea

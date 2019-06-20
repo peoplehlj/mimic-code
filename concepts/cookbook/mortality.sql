@@ -6,7 +6,8 @@
 -- Where "mimiciii" is the name of your schema, and may be different.
 -- Inclusion criteria: Adult (>15 year old) patients, *MOST RECENT* hospital admission
 -- ------------------------------------------------------------------
-
+DROP MATERIALIZED VIEW IF EXISTS v_mortality CASCADE;
+create materialized view v_mortality as
 WITH tmp as
 (
     SELECT adm.hadm_id, admittime, dischtime, adm.deathtime, pat.dod
