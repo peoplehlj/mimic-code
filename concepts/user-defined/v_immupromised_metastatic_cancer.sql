@@ -1,6 +1,6 @@
 
-DROP MATERIALIZED VIEW IF EXISTS v_immupromised-metastatic-cancer CASCADE;
-create materialized view v_immupromised-metastatic-cancer as
+DROP MATERIALIZED VIEW IF EXISTS v_immupromised_metastatic_cancer CASCADE;
+create materialized view v_immupromised_metastatic_cancer as
 
 WITH diagnoses_v as
 (

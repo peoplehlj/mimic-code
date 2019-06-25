@@ -1,6 +1,6 @@
 
-DROP MATERIALIZED VIEW IF EXISTS v_immupromised-autoimmune-disease CASCADE;
-create materialized view v_immupromised-autoimmune-disease as
+DROP MATERIALIZED VIEW IF EXISTS v_immupromised_autoimmune_disease CASCADE;
+create materialized view v_immupromised_autoimmune_disease as
 
 WITH diagnoses_v as
 (

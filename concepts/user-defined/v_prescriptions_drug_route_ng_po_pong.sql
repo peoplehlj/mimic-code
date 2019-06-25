@@ -4,8 +4,8 @@
 -- set search_path to mimiciii;
 ------------------------------------
 
-DROP MATERIALIZED VIEW IF EXISTS v_prescriptions_drug_route-iv-ivdrip CASCADE;
-create materialized view v_prescriptions_drug_route-iv-ivdrip as
+DROP MATERIALIZED VIEW IF EXISTS v_prescriptions_drug_route_ng_po_pong CASCADE;
+create materialized view v_prescriptions_drug_route_ng_po_pong as
 
 WITH prescriptions_v as
 (
@@ -23,5 +23,5 @@ or prescriptions.drug like '%Fludrocortisone%'
 or prescriptions.drug like '%Triamcinolone%'
 )
 select * from prescriptions_v where
-route ='IV' OR route ='IV DRIP'
+route ='NG' OR route ='PO' OR route ='PO/NG'
 ;

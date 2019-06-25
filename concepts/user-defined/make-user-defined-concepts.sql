@@ -14,16 +14,16 @@
 
 \echo 'v_immupromised views ..'
 \i v_immupromised.sql
-\i v_immupromised-autoimmune-disease.sql
-\i v_immupromised-hive-aids.sql
-\i v_immupromised-lymphoma.sql
-\i v_immupromised-metastatic-cancer.sql
-\i v_immupromised-solid-tumor-without-metastasis.sql
-\i v_immupromised-transplantation.sql
+\i v_immupromised_autoimmune_disease.sql
+\i v_immupromised_hive_aids.sql
+\i v_immupromised_lymphoma.sql
+\i v_immupromised_metastatic_cancer.sql
+\i v_immupromised_solid_tumor_without_metastasis.sql
+\i v_immupromised_transplantation.sql
 
 \echo 'v_prescriptions_drug_route views ..'
 \i v_prescriptions_drug_route.sql
-\i v_prescriptions_drug_route-iv-ivdrip.sql
-\i v_prescriptions_drug_route-ng-po-pong.sql
+\i v_prescriptions_drug_route_iv_ivdrip.sql
+\i v_prescriptions_drug_route_ng_po_pong.sql
 
 \echo 'Finished loading materialized views.'

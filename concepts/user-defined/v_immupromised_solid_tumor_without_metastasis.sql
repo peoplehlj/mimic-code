@@ -1,6 +1,6 @@
 
-DROP MATERIALIZED VIEW IF EXISTS v_immupromised-solid-tumor-without-metastasis CASCADE;
-create materialized view v_immupromised-solid-tumor-without-metastasis as
+DROP MATERIALIZED VIEW IF EXISTS v_immupromised_solid_tumor_without_metastasis CASCADE;
+create materialized view v_immupromised_solid_tumor_without_metastasis as
 
 WITH diagnoses_v as
 (
