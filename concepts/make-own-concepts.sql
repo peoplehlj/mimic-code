@@ -1,4 +1,5 @@
--- psql 'dbname=mimic user=mimicuser options=--search_path=mimiciii' -f make-own-concepts.sql
+--
+-- su mimicuser && psql 'dbname=mimic user=mimicuser options=--search_path=mimiciii' -f make-own-concepts.sql
 --
 
 \echo ''
